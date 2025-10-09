@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(90deg, #8a2be2, #00f, #0ff);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.typewriter span {
+  border-right: 2px solid #fff;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+h2 {
+  color: #0ff;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Botón estilo gamer */
+.btn-gamer {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #0ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #0ff;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+}
+
+.btn-gamer:hover {
+  background: #8a2be2;
+  color: #fff;
+  box-shadow: 0 0 20px #8a2be2;
+}
+
+/* Estilos específicos para la calculadora */
+#calculator-section {
+  text-align: center;
+}
+
+.calculator {
+  max-width: 300px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  background: #000;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0 10px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.calc-btn {
+  padding: 15px;
+  font-size: 1rem;
+  min-height: 50px;
+}
+
+.num-btn {
+  background: #333;
+  color: #fff;
+  box-shadow: 0 0 10px #333;
+}
+
+.num-btn:hover {
+  background: #555;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.op-btn {
+  background: #ff4500;
+  color: #fff;
+  box-shadow: 0 0 15px #ff4500;
+  grid-column: span 2;
+  font-size: 1.2rem;
+}
+
+.op-btn:hover {
+  background: #8a2be2;
+  box-shadow: 0 0 20px #8a2be2;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
+  
+  .calculator {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

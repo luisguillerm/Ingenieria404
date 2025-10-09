@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Gamer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <header>
+    <h1 class="typewriter">Calculadora <span id="title"></span></h1>
+  </header>
+
+  <section id="calculator-section">
+    <h2>🖥️ La Calculadora</h2>
+    <div class="calculator">
+      <input type="text" id="display" readonly>
+      <div class="buttons">
+        <button class="btn-gamer calc-btn" onclick="clearDisplay()">C</button>
+        <button class="btn-gamer calc-btn" onclick="appendToDisplay('/')">÷</button>
+        <button class="btn-gamer calc-btn" onclick="appendToDisplay('*')">×</button>
+        <button class="btn-gamer calc-btn" onclick="appendToDisplay('-')">-</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('7')">7</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('8')">8</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('9')">9</button>
+        <button class="btn-gamer calc-btn" onclick="appendToDisplay('+')">+</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('4')">4</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('5')">5</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('6')">6</button>
+        <button class="btn-gamer calc-btn op-btn" onclick="calculate()">=</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('1')">1</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('2')">2</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('3')">3</button>
+        <button class="btn-gamer calc-btn num-btn" onclick="appendToDisplay('0')" style="grid-column: span 2;">0</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
