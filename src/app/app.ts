@@ -1,13 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';  // Solo necesitas RouterOutlet aquí
+import { routes } from './app.routes';  // Las rutas están definidas en app.routes.ts
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],  // Asegúrate de que RouterOutlet esté en el imports
-  templateUrl: './app.html',
-  styleUrls: ['./app.css']
+  standalone: true,  // El componente es standalone
+  imports: [RouterOutlet],  // Solo importas RouterOutlet
+  templateUrl: './app.html',  // Template del componente
+  styleUrls: ['./app.css'],   // Estilos del componente
 })
 export class App {
-  protected readonly title = signal('Angular-404');
+  protected readonly title = 'Angular-404';  // Título del componente
 }
 

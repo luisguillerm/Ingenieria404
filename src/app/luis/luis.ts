@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-luis',
-  imports: [],
+  standalone: true,  // Marcamos como standalone
   templateUrl: './luis.html',
-  styleUrl: './luis.css',
+  styleUrls: ['./luis.css'],
 })
-export class Luis {
+export class Luis {}
 
-}
