@@ -12,4 +12,3 @@ import { routes } from './app.routes';  // Las rutas están definidas en app.rou
 export class App {
   protected readonly title = 'Angular-404';  // Título del componente
 }
-
