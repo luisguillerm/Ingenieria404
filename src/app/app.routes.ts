@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home';  // Importa HomeComponent
-import { Luis } from './luis/luis';  // Im
+import { DanielSalazarComponent } from './daniel-salazar/daniel-salazar';
 
 export const routes: Routes = [
-  { path: '', component: Home },  // Página de bienvenida
-  { path: 'luis', component: Luis }  // Ruta hacia el componente Luis
+  { path: '', component: DanielSalazarComponent },  // Página Daniel Salazar
+  { path: 'daniel-salazar', component: DanielSalazarComponent }
 ];
 
