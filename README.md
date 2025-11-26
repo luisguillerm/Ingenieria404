@@ -8,5 +8,5 @@ Integrantes del equipo:
 -Paulina Guadalupe Salas Ventura
 -Raul de Jesus Martinez Cortez
 -Luis Guillermo Saldivar Sanchez
--
+-Luis Enrique Reyes Muñoz
 -
