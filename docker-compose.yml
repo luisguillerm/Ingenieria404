@@ -1,0 +1,6 @@
+services:
+  angular_app:
+    build: .
+    container_name: mi_angular_container
+    ports:
+      - "8080:80"
