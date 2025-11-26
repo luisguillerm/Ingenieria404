@@ -9,4 +9,4 @@ Integrantes del equipo:
 -Raul de Jesus Martinez Cortez
 -Luis Guillermo Saldivar Sanchez
 -Luis Enrique Reyes Muñoz
--
+-Valeria Viane Morin Martinez
