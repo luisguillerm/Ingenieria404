@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-daniel-salazar',
+  standalone: true,
   imports: [],
   templateUrl: './daniel-salazar.html',
   styleUrl: './daniel-salazar.css'
